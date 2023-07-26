@@ -51,7 +51,7 @@ export class TutorialDetailsComponent implements OnInit {
 
 
   deleteTutorial(): void {
-    if (this.currentTutorial.id) {
+    if (this.tutorial?.id) {
       this.tutorialService.delete(this.currentTutorial.id)
         .then(() => {
           this.refreshList.emit();
