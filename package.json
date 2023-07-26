@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "ng deploy --base-href=https://bydens.github.io/kino-monster/",
+    "deploy-local": "ng build --output-path docs --base-href kino-monster"
   },
   "private": true,
   "dependencies": {
